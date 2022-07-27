@@ -1,0 +1,239 @@
+Log file script for CubeSatSim
+
+-- Logs begin at Thu 2019-02-14 11:11:59 CET, end at Wed 2022-07-27 15:06:58 CEST. --
+Jul 27 15:04:08 YL systemd[1]: Started CubeSatSim service.
+Jul 27 15:04:14 YL sudo[447]:     root : TTY=unknown ; PWD=/home/pi/CubeSatSim ; USER=root ; COMMAND=/usr/bin/systemctl stop rpitx
+Jul 27 15:04:14 YL sudo[447]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jul 27 15:04:14 YL sudo[447]: pam_unix(sudo:session): session closed for user root
+Jul 27 15:04:15 YL sudo[450]:     root : TTY=unknown ; PWD=/home/pi/CubeSatSim ; USER=root ; COMMAND=/usr/bin/rm /home/pi/CubeSatSim/ready /home/pi/CubeSatSim/cwready
+Jul 27 15:04:15 YL sudo[450]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jul 27 15:04:15 YL cubesatsim[329]: rm: cannot remove '/home/pi/CubeSatSim/ready': No such file or directory
+Jul 27 15:04:15 YL cubesatsim[329]: rm: cannot remove '/home/pi/CubeSatSim/cwready': No such file or directory
+Jul 27 15:04:15 YL sudo[450]: pam_unix(sudo:session): session closed for user root
+Jul 27 15:04:15 YL cubesatsim[329]: Pi Zero 2 detected
+Jul 27 15:04:15 YL cubesatsim[329]: CubeSatSim v1.2 starting...
+Jul 27 15:04:15 YL cubesatsim[329]: Test bus 1
+Jul 27 15:04:16 YL cubesatsim[329]: I2C Bus Tested: /dev/i2c-1
+Jul 27 15:04:16 YL cubesatsim[329]: Test bus 3
+Jul 27 15:04:16 YL cubesatsim[329]: I2C Bus Tested: /dev/i2c-3
+Jul 27 15:04:16 YL cubesatsim[329]: Finished testing
+Jul 27 15:04:17 YL sudo[459]:     root : TTY=unknown ; PWD=/home/pi/CubeSatSim ; USER=root ; COMMAND=/usr/bin/systemctl restart rpitx
+Jul 27 15:04:17 YL sudo[459]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jul 27 15:04:17 YL sudo[459]: pam_unix(sudo:session): session closed for user root
+Jul 27 15:04:18 YL sudo[468]:     root : TTY=unknown ; PWD=/home/pi/CubeSatSim ; USER=root ; COMMAND=/usr/bin/rm /home/pi/CubeSatSim/camera_out.jpg
+Jul 27 15:04:18 YL sudo[468]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jul 27 15:04:18 YL sudo[467]:     root : TTY=unknown ; PWD=/home/pi/CubeSatSim ; USER=root ; COMMAND=/usr/bin/rm /home/pi/CubeSatSim/camera_out.jpg.wav
+Jul 27 15:04:19 YL sudo[467]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jul 27 15:04:19 YL sudo[468]: pam_unix(sudo:session): session closed for user root
+Jul 27 15:04:19 YL sudo[467]: pam_unix(sudo:session): session closed for user root
+Jul 27 15:04:19 YL cubesatsim[329]: Mode file /home/pi/CubeSatSim/.mode contains f
+Jul 27 15:04:19 YL cubesatsim[329]: Mode is FSK
+Jul 27 15:04:19 YL cubesatsim[329]: Config file /home/pi/CubeSatSim/sim.cfg contains AMSAT 137 0.000000 0.000000
+Jul 27 15:04:19 YL cubesatsim[329]: v1 Present with UHF BPF
+Jul 27 15:04:19 YL cubesatsim[329]: Tx LED Off
+Jul 27 15:04:19 YL cubesatsim[329]: Power LED On
+Jul 27 15:04:19 YL cubesatsim[329]: INFO: I2C bus status 0: -1 1: 1 3: 3 camera: -1
+Jul 27 15:04:19 YL cubesatsim[329]: Querying payload with R to reset
+Jul 27 15:04:20 YL cubesatsim[329]: Querying payload with R to reset
+Jul 27 15:04:23 YL cubesatsim[329]: pythonConfigStr: python3 -u /home/pi/CubeSatSim/ina219.py 1 3 c
+Jul 27 15:04:31 YL cubesatsim[329]: pythonStr result:  1.796   2.600  1.820  -0.600  3.872  197.500  4.908  -6.300  1.812  -0.500  1.628  -0.100  1.812  -0.200  0.000   0.000
+Jul 27 15:04:31 YL cubesatsim[329]: STEM Payload not present!
+Jul 27 15:04:31 YL cubesatsim[329]:  -> Is STEM Payload programed and Serial1 set to 115200 baud?
+Jul 27 15:04:31 YL cubesatsim[329]:  FSK Mode, 1030 bits per frame, 200 bits per second, 5150 ms per frame, 4650 ms sample period
+Jul 27 15:04:31 YL cubesatsim[329]: first time - no sleep
+Jul 27 15:04:31 YL cubesatsim[329]: TX Antenna Deployed!
+Jul 27 15:04:31 YL cubesatsim[329]: Opening socket!
+Jul 27 15:04:31 YL cubesatsim[329]: Connection Failed
+Jul 27 15:04:31 YL cubesatsim[329]: Error: Connection refused
+Jul 27 15:04:31 YL cubesatsim[329]: Connection Failed
+Jul 27 15:04:31 YL cubesatsim[329]: Error: Connection refused
+Jul 27 15:04:31 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 33
+Jul 27 15:04:31 YL cubesatsim[329]: ++++ Loop time: 0.000 sec +++++
+Jul 27 15:04:31 YL cubesatsim[329]: Python read Result:  1.792   2.700  1.820  -0.600  3.876  198.300  4.908  -6.300  1.812  -0.300  1.624  -0.200  1.812  -0.300  0.000   0.000
+Jul 27 15:04:31 YL cubesatsim[329]: INFO: Battery voltage:  3.88 V  Threshold  3.70 V Current:  198.3 mA Threshold:  100.0 mA
+Jul 27 15:04:32 YL cubesatsim[329]: first time - no sleep
+Jul 27 15:04:32 YL cubesatsim[329]: Opening socket!
+Jul 27 15:04:32 YL cubesatsim[329]: socket send 1 97 ms bytes: 465602
+Jul 27 15:04:32 YL cubesatsim[329]: socket send 2 in 1 ms bytes: 465602
+Jul 27 15:04:32 YL cubesatsim[329]: socket send 3 in 1 ms bytes: 465602
+Jul 27 15:04:32 YL cubesatsim[329]: socket send 4 in 1 ms bytes: 465602
+Jul 27 15:04:32 YL cubesatsim[329]: socket send 5 in 1 ms bytes: 465602
+Jul 27 15:04:32 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 34
+Jul 27 15:04:32 YL cubesatsim[329]: ++++ Loop time: 1.203 sec +++++
+Jul 27 15:04:32 YL cubesatsim[329]: Python read Result:  1.792   3.000  1.820  -0.600  3.872  197.600  4.904  -7.300  1.808  -0.600  1.628  -0.200  1.812  -0.400  0.000   0.000
+Jul 27 15:04:32 YL cubesatsim[329]: INFO: Battery voltage:  3.87 V  Threshold  3.70 V Current:  197.6 mA Threshold:  100.0 mA
+Jul 27 15:04:37 YL cubesatsim[329]: Sleep period: 4586
+Jul 27 15:04:38 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:04:38 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 39
+Jul 27 15:04:38 YL cubesatsim[329]: ++++ Loop time: 5.605 sec +++++
+Jul 27 15:04:38 YL cubesatsim[329]: Python read Result:  1.788   3.000  1.820  -0.600  3.876  193.400  4.892  -7.200  1.812  -0.500  1.632  -0.200  1.816  -0.300  0.000   0.000
+Jul 27 15:04:38 YL cubesatsim[329]: INFO: Battery voltage:  3.88 V  Threshold  3.70 V Current:  193.4 mA Threshold:  100.0 mA
+Jul 27 15:04:42 YL cubesatsim[329]: Sleep period: 3785
+Jul 27 15:04:43 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:04:43 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 44
+Jul 27 15:04:43 YL cubesatsim[329]: ++++ Loop time: 5.091 sec +++++
+Jul 27 15:04:43 YL cubesatsim[329]: Python read Result:  1.788   2.900  1.816  -0.600  3.868  199.300  4.904  -7.100  1.812  -0.300  1.632  -0.100  1.816  -0.400  0.000   0.000
+Jul 27 15:04:43 YL cubesatsim[329]: INFO: Battery voltage:  3.87 V  Threshold  3.70 V Current:  199.3 mA Threshold:  100.0 mA
+Jul 27 15:04:47 YL cubesatsim[329]: Sleep period: 3797
+Jul 27 15:04:47 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:04:47 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 49
+Jul 27 15:04:47 YL cubesatsim[329]: ++++ Loop time: 4.709 sec +++++
+Jul 27 15:04:48 YL cubesatsim[329]: Python read Result:  1.788   2.900  1.816  -0.600  3.868  200.100  4.908  -6.800  1.808  -0.400  1.624  -0.200  1.808  -0.300  0.000   0.000
+Jul 27 15:04:48 YL cubesatsim[329]: INFO: Battery voltage:  3.87 V  Threshold  3.70 V Current:  200.1 mA Threshold:  100.0 mA
+Jul 27 15:04:52 YL cubesatsim[329]: Sleep period: 3797
+Jul 27 15:04:52 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:04:52 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 54
+Jul 27 15:04:52 YL cubesatsim[329]: ++++ Loop time: 4.900 sec +++++
+Jul 27 15:04:53 YL cubesatsim[329]: Python read Result:  1.784   2.900  1.812  -0.600  3.868  200.300  4.904  -8.500  1.808  -0.400  1.628  -0.100  1.808  -0.300  0.000   0.000
+Jul 27 15:04:53 YL cubesatsim[329]: INFO: Battery voltage:  3.87 V  Threshold  3.70 V Current:  200.3 mA Threshold:  100.0 mA
+Jul 27 15:04:57 YL cubesatsim[329]: Sleep period: 3797
+Jul 27 15:04:57 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:04:57 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 59
+Jul 27 15:04:57 YL cubesatsim[329]: ++++ Loop time: 4.900 sec +++++
+Jul 27 15:04:58 YL cubesatsim[329]: Python read Result:  1.784   2.900  1.812  -0.600  3.868  200.700  4.908  -7.100  1.808  -0.400  1.628  -0.100  1.808  -0.400  0.000   0.000
+Jul 27 15:04:58 YL cubesatsim[329]: INFO: Battery voltage:  3.87 V  Threshold  3.70 V Current:  200.7 mA Threshold:  100.0 mA
+Jul 27 15:05:01 YL cubesatsim[329]: Sleep period: 3797
+Jul 27 15:05:02 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:05:02 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 64
+Jul 27 15:05:02 YL cubesatsim[329]: ++++ Loop time: 4.900 sec +++++
+Jul 27 15:05:03 YL cubesatsim[329]: Python read Result:  1.780   2.300  1.812  -0.500  3.864  195.100  4.864  -7.100  1.808  -0.400  1.632  -0.200  1.812  -0.300  0.000   0.000
+Jul 27 15:05:03 YL cubesatsim[329]: INFO: Battery voltage:  3.86 V  Threshold  3.70 V Current:  195.1 mA Threshold:  100.0 mA
+Jul 27 15:05:06 YL cubesatsim[329]: Sleep period: 3785
+Jul 27 15:05:07 YL cubesatsim[329]: socket send 1 191 ms bytes: 465602
+Jul 27 15:05:07 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 69
+Jul 27 15:05:07 YL cubesatsim[329]: ++++ Loop time: 4.901 sec +++++
+Jul 27 15:05:07 YL cubesatsim[329]: Python read Result:  1.780   2.800  1.808  -0.500  3.868  201.700  4.904  -7.300  1.800  -0.400  1.628  -0.200  1.812  -0.400  0.000   0.000
+Jul 27 15:05:07 YL cubesatsim[329]: INFO: Battery voltage:  3.87 V  Threshold  3.70 V Current:  201.7 mA Threshold:  100.0 mA
+Jul 27 15:05:11 YL cubesatsim[329]: Sleep period: 3776
+Jul 27 15:05:12 YL cubesatsim[329]: socket send 1 191 ms bytes: 465602
+Jul 27 15:05:12 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 74
+Jul 27 15:05:12 YL cubesatsim[329]: ++++ Loop time: 4.899 sec +++++
+Jul 27 15:05:12 YL cubesatsim[329]: Python read Result:  1.784   2.900  1.808  -0.500  3.864  200.700  4.900  -7.500  1.800  -0.400  1.632  -0.200  1.816  -0.300  0.000   0.000
+Jul 27 15:05:12 YL cubesatsim[329]: INFO: Battery voltage:  3.86 V  Threshold  3.70 V Current:  200.7 mA Threshold:  100.0 mA
+Jul 27 15:05:16 YL cubesatsim[329]: Sleep period: 3703
+Jul 27 15:05:17 YL cubesatsim[329]: socket send 1 0 ms bytes: 465602
+Jul 27 15:05:17 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 79
+Jul 27 15:05:17 YL cubesatsim[329]: ++++ Loop time: 4.802 sec +++++
+Jul 27 15:05:17 YL cubesatsim[329]: Python read Result:  1.780   2.900  1.808  -0.600  3.868  197.100  4.876  -7.500  1.804  -0.200  1.632  -0.100  1.816  -0.300  0.000   0.000
+Jul 27 15:05:17 YL cubesatsim[329]: INFO: Battery voltage:  3.87 V  Threshold  3.70 V Current:  197.1 mA Threshold:  100.0 mA
+Jul 27 15:05:21 YL cubesatsim[329]: Sleep period: 3704
+Jul 27 15:05:22 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:05:22 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 84
+Jul 27 15:05:22 YL cubesatsim[329]: ++++ Loop time: 4.998 sec +++++
+Jul 27 15:05:22 YL cubesatsim[329]: Python read Result:  1.788   3.000  1.812  -0.600  3.864  201.100  4.904  -7.800  1.804  -0.100  1.632  -0.200  1.816  -0.400  0.000   0.000
+Jul 27 15:05:22 YL cubesatsim[329]: INFO: Battery voltage:  3.86 V  Threshold  3.70 V Current:  201.1 mA Threshold:  100.0 mA
+Jul 27 15:05:26 YL cubesatsim[329]: Sleep period: 3788
+Jul 27 15:05:27 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:05:27 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 89
+Jul 27 15:05:27 YL cubesatsim[329]: ++++ Loop time: 4.900 sec +++++
+Jul 27 15:05:27 YL cubesatsim[329]: Python read Result:  1.792   3.000  1.816  -0.600  3.864  201.400  4.908  -8.100  1.808  -0.400  1.636  -0.100  1.820  -0.400  0.000   0.000
+Jul 27 15:05:27 YL cubesatsim[329]: INFO: Battery voltage:  3.86 V  Threshold  3.70 V Current:  201.4 mA Threshold:  100.0 mA
+Jul 27 15:05:31 YL cubesatsim[329]: Sleep period: 3707
+Jul 27 15:05:32 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:05:32 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 93
+Jul 27 15:05:32 YL cubesatsim[329]: ++++ Loop time: 4.899 sec +++++
+Jul 27 15:05:32 YL cubesatsim[329]: Python read Result:  1.784   2.900  1.808  -0.600  3.864  200.900  4.908  -8.000  1.800  -0.500  1.632  -0.100  1.820  -0.300  0.000   0.000
+Jul 27 15:05:32 YL cubesatsim[329]: INFO: Battery voltage:  3.86 V  Threshold  3.70 V Current:  200.9 mA Threshold:  100.0 mA
+Jul 27 15:05:36 YL cubesatsim[329]: Sleep period: 3709
+Jul 27 15:05:37 YL cubesatsim[329]: socket send 1 0 ms bytes: 465602
+Jul 27 15:05:37 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 98
+Jul 27 15:05:37 YL cubesatsim[329]: ++++ Loop time: 4.805 sec +++++
+Jul 27 15:05:37 YL cubesatsim[329]: Python read Result:  1.780   2.900  1.808  -0.600  3.864  202.600  4.908  -7.500  1.804  -0.300  1.636  -0.200  1.824  -0.300  0.000   0.000
+Jul 27 15:05:37 YL cubesatsim[329]: INFO: Battery voltage:  3.86 V  Threshold  3.70 V Current:  202.6 mA Threshold:  100.0 mA
+Jul 27 15:05:41 YL cubesatsim[329]: Sleep period: 3790
+Jul 27 15:05:41 YL cubesatsim[329]: Sending MAX frame
+Jul 27 15:05:41 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:05:41 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 103
+Jul 27 15:05:41 YL cubesatsim[329]: ++++ Loop time: 4.899 sec +++++
+Jul 27 15:05:42 YL cubesatsim[329]: Python read Result:  1.780   2.800  1.808  -0.500  3.860  203.100  4.904  -7.500  1.800  -0.400  1.636  -0.200  1.824  -0.400  0.000   0.000
+Jul 27 15:05:42 YL cubesatsim[329]: INFO: Battery voltage:  3.86 V  Threshold  3.70 V Current:  203.1 mA Threshold:  100.0 mA
+Jul 27 15:05:46 YL cubesatsim[329]: Sleep period: 3707
+Jul 27 15:05:46 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:05:46 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 108
+Jul 27 15:05:46 YL cubesatsim[329]: ++++ Loop time: 4.802 sec +++++
+Jul 27 15:05:47 YL cubesatsim[329]: Python read Result:  1.780   2.900  1.808  -0.600  3.864  200.700  4.904  -7.100  1.804  -0.300  1.640  -0.200  1.832  -0.400  0.000   0.000
+Jul 27 15:05:47 YL cubesatsim[329]: INFO: Battery voltage:  3.86 V  Threshold  3.70 V Current:  200.7 mA Threshold:  100.0 mA
+Jul 27 15:05:50 YL cubesatsim[329]: Sleep period: 3707
+Jul 27 15:05:51 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:05:51 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 113
+Jul 27 15:05:51 YL cubesatsim[329]: ++++ Loop time: 4.998 sec +++++
+Jul 27 15:05:52 YL cubesatsim[329]: Python read Result:  1.792   2.900  1.816  -0.600  3.864  202.800  4.896  -7.200  1.808  -0.400  1.644  -0.200  1.832  -0.400  0.000   0.000
+Jul 27 15:05:52 YL cubesatsim[329]: INFO: Battery voltage:  3.86 V  Threshold  3.70 V Current:  202.8 mA Threshold:  100.0 mA
+Jul 27 15:05:55 YL cubesatsim[329]: Sleep period: 3793
+Jul 27 15:05:56 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:05:56 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 118
+Jul 27 15:05:56 YL cubesatsim[329]: ++++ Loop time: 4.995 sec +++++
+Jul 27 15:05:56 YL cubesatsim[329]: Python read Result:  1.792   2.600  1.816  -0.500  3.868  198.300  4.876  -7.900  1.804  -0.200  1.644  -0.200  1.836  -0.300  0.000   0.000
+Jul 27 15:05:56 YL cubesatsim[329]: INFO: Battery voltage:  3.87 V  Threshold  3.70 V Current:  198.3 mA Threshold:  100.0 mA
+Jul 27 15:06:00 YL cubesatsim[329]: Sleep period: 3710
+Jul 27 15:06:01 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:06:01 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 123
+Jul 27 15:06:01 YL cubesatsim[329]: ++++ Loop time: 4.901 sec +++++
+Jul 27 15:06:01 YL cubesatsim[329]: Python read Result:  1.792   3.000  1.816  -0.600  3.864  201.600  4.904  -7.900  1.808  -0.500  1.648  -0.200  1.836  -0.400  0.000   0.000
+Jul 27 15:06:01 YL cubesatsim[329]: INFO: Battery voltage:  3.86 V  Threshold  3.70 V Current:  201.6 mA Threshold:  100.0 mA
+Jul 27 15:06:05 YL cubesatsim[329]: Sleep period: 3712
+Jul 27 15:06:06 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:06:06 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 128
+Jul 27 15:06:06 YL cubesatsim[329]: ++++ Loop time: 4.897 sec +++++
+Jul 27 15:06:06 YL cubesatsim[329]: Python read Result:  1.784   2.900  1.816  -0.600  3.864  200.400  4.904  -7.900  1.808  -0.300  1.652  -0.200  1.840  -0.400  0.000   0.000
+Jul 27 15:06:06 YL cubesatsim[329]: INFO: Battery voltage:  3.86 V  Threshold  3.70 V Current:  200.4 mA Threshold:  100.0 mA
+Jul 27 15:06:10 YL cubesatsim[329]: Sleep period: 3797
+Jul 27 15:06:11 YL cubesatsim[329]: socket send 1 191 ms bytes: 465602
+Jul 27 15:06:11 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 133
+Jul 27 15:06:11 YL cubesatsim[329]: ++++ Loop time: 4.900 sec +++++
+Jul 27 15:06:11 YL cubesatsim[329]: Python read Result:  1.784   2.900  1.816  -0.600  3.864  200.300  4.904  -7.900  1.804  -0.400  1.652  -0.100  1.844  -0.400  0.000   0.000
+Jul 27 15:06:11 YL cubesatsim[329]: INFO: Battery voltage:  3.86 V  Threshold  3.70 V Current:  200.3 mA Threshold:  100.0 mA
+Jul 27 15:06:15 YL cubesatsim[329]: Sleep period: 3714
+Jul 27 15:06:16 YL cubesatsim[329]: socket send 1 191 ms bytes: 465602
+Jul 27 15:06:16 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 138
+Jul 27 15:06:16 YL cubesatsim[329]: ++++ Loop time: 4.900 sec +++++
+Jul 27 15:06:16 YL cubesatsim[329]: Python read Result:  1.788   2.900  1.816  -0.600  3.864  200.600  4.900  -7.100  1.808  -0.400  1.656  -0.200  1.848  -0.400  0.000   0.000
+Jul 27 15:06:16 YL cubesatsim[329]: INFO: Battery voltage:  3.86 V  Threshold  3.70 V Current:  200.6 mA Threshold:  100.0 mA
+Jul 27 15:06:20 YL cubesatsim[329]: Sleep period: 3712
+Jul 27 15:06:21 YL cubesatsim[329]: socket send 1 0 ms bytes: 465602
+Jul 27 15:06:21 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 142
+Jul 27 15:06:21 YL cubesatsim[329]: ++++ Loop time: 4.902 sec +++++
+Jul 27 15:06:21 YL cubesatsim[329]: Python read Result:  1.788   2.900  1.816  -0.600  3.868  197.100  4.896  -7.300  1.812  -0.100  1.656  -0.200  1.852  -0.400  0.000   0.000
+Jul 27 15:06:21 YL cubesatsim[329]: INFO: Battery voltage:  3.87 V  Threshold  3.70 V Current:  197.1 mA Threshold:  100.0 mA
+Jul 27 15:06:25 YL cubesatsim[329]: Sleep period: 3613
+Jul 27 15:06:26 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:06:26 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 147
+Jul 27 15:06:26 YL cubesatsim[329]: ++++ Loop time: 4.898 sec +++++
+Jul 27 15:06:26 YL cubesatsim[329]: Python read Result:  1.788   3.000  1.816  -0.600  3.872  194.800  4.904  -7.300  1.812  -0.500  1.660  -0.200  1.856  -0.400  0.000   0.000
+Jul 27 15:06:26 YL cubesatsim[329]: INFO: Battery voltage:  3.87 V  Threshold  3.70 V Current:  194.8 mA Threshold:  100.0 mA
+Jul 27 15:06:30 YL cubesatsim[329]: Sleep period: 3710
+Jul 27 15:06:30 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:06:31 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 152
+Jul 27 15:06:31 YL cubesatsim[329]: ++++ Loop time: 4.900 sec +++++
+Jul 27 15:06:31 YL cubesatsim[329]: Python read Result:  1.800   3.000  1.820  -0.600  3.884  184.000  4.904  -7.500  1.820  -0.300  1.668  -0.200  1.864  -0.400  0.000   0.000
+Jul 27 15:06:31 YL cubesatsim[329]: INFO: Battery voltage:  3.88 V  Threshold  3.70 V Current:  184.0 mA Threshold:  100.0 mA
+Jul 27 15:06:35 YL cubesatsim[329]: Sleep period: 3513
+Jul 27 15:06:35 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:06:35 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 157
+Jul 27 15:06:35 YL cubesatsim[329]: ++++ Loop time: 4.902 sec +++++
+Jul 27 15:06:36 YL cubesatsim[329]: Python read Result:  1.808   3.200  1.832  -0.600  3.896  174.100  4.888  -7.300  1.820  -0.600  1.672  -0.200  1.872  -0.400  0.000   0.000
+Jul 27 15:06:36 YL cubesatsim[329]: INFO: Battery voltage:  3.90 V  Threshold  3.70 V Current:  174.1 mA Threshold:  100.0 mA
+Jul 27 15:06:39 YL cubesatsim[329]: Sleep period: 3709
+Jul 27 15:06:40 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:06:40 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 162
+Jul 27 15:06:40 YL cubesatsim[329]: ++++ Loop time: 4.898 sec +++++
+Jul 27 15:06:41 YL cubesatsim[329]: Python read Result:  1.808   3.200  1.832  -0.600  3.896  174.700  4.904  -7.200  1.824  -0.500  1.676  -0.200  1.872  -0.400  0.000   0.000
+Jul 27 15:06:41 YL cubesatsim[329]: INFO: Battery voltage:  3.90 V  Threshold  3.70 V Current:  174.7 mA Threshold:  100.0 mA
+Jul 27 15:06:44 YL cubesatsim[329]: Sleep period: 3710
+Jul 27 15:06:45 YL cubesatsim[329]: socket send 1 0 ms bytes: 465602
+Jul 27 15:06:45 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 167
+Jul 27 15:06:45 YL cubesatsim[329]: ++++ Loop time: 4.902 sec +++++
+Jul 27 15:06:45 YL cubesatsim[329]: Python read Result:  1.816   3.300  1.836  -0.600  3.892  178.200  4.904  -7.200  1.824  -0.500  1.676  -0.200  1.872  -0.400  0.000   0.000
+Jul 27 15:06:46 YL cubesatsim[329]: INFO: Battery voltage:  3.89 V  Threshold  3.70 V Current:  178.2 mA Threshold:  100.0 mA
+Jul 27 15:06:49 YL cubesatsim[329]: Sleep period: 3710
+Jul 27 15:06:50 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:06:50 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 172
+Jul 27 15:06:50 YL cubesatsim[329]: ++++ Loop time: 4.898 sec +++++
+Jul 27 15:06:50 YL cubesatsim[329]: Python read Result:  1.820   2.900  1.840  -0.600  3.888  181.300  4.904  -7.900  1.824  -0.200  1.680  -0.200  1.876  -0.300  0.000   0.000
+Jul 27 15:06:50 YL cubesatsim[329]: INFO: Battery voltage:  3.89 V  Threshold  3.70 V Current:  181.3 mA Threshold:  100.0 mA
+Jul 27 15:06:54 YL cubesatsim[329]: Sleep period: 3710
+Jul 27 15:06:55 YL cubesatsim[329]: socket send 1 1 ms bytes: 465602
+Jul 27 15:06:55 YL cubesatsim[329]: INFO: Reset Count: 138 Uptime since Reset: 177
+Jul 27 15:06:55 YL cubesatsim[329]: ++++ Loop time: 4.803 sec +++++
+Jul 27 15:06:55 YL cubesatsim[329]: Python read Result:  1.820   2.900  1.840  -0.500  3.880  185.500  4.908  -7.300  1.828  -0.100  1.676  -0.200  1.880  -0.500  0.000   0.000
+Jul 27 15:06:55 YL cubesatsim[329]: INFO: Battery voltage:  3.88 V  Threshold  3.70 V Current:  185.5 mA Threshold:  100.0 mA

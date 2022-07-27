@@ -1,0 +1,5 @@
+OK: +Y, +-X, +z
+NO: -Z
+
+2. does not start when using bat.
+4.bme280
